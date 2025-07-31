@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vance Clark Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fit for Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Vance Clark</h1>
-        <p class="tagline">Photographer, Web Developer, Explorer, Artist</p>
-    </header>
+    <h1>Welcome to Fit for Fitness</h1>
+    <p>the space where everyone is fit for the same reason, fitness</p>
 
     <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about-me">Who is Vance</a></li>
-            <li><a href="#previous-work">Portfolio</a></li>
-            <li><a href="#contact">How to Reach Me</a></li>
-        </ul>
+    <nav class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="contactus.html">Connect with us</a>
     </nav>
 
-    <main>
-        <!-- Personal Description -->
-        <section id="about-me">
-            <h2>Who Am I</h2>
-            <img src="selfportriate.jpg" alt="Vance Clarks self portriat" class="float-left">
-            <p>Hi! If you are looking at this, you are interested in my work and what I can do to help you. I will start
-                by stating I am a first child, so identifying and solving problems is part of who I am. I have helped
-                brands like North Woods Lodge Alaska with digital media solutions, Asali Gold with marketing and social
-                media strategies, and Studio 22 with artistic advertising solutions. I don't just solve your problem — I
-                find the heart of the problem and stop it there!</p>
-        </section>
+    <div class="container my-5">
+        <h1 class="text-center text-primary mb-4">Welcome to Fit for Fun Fitness Club</h1>
+        <p class="text-center text-muted">Where fitness meets fun, and everyone fits in!</p>
 
-        <!-- Portfolio -->
-        <section id="previous-work">
-            <h2>Portfolio</h2>
-            <p>Below are some of the project i have had the opportunity to work on and am prod to display!</p>
-            <img src="C:\Users\vance\OneDrive\pawfectpetcare\petpic.jpg" alt="mini australian shepard looking off into the distance">
-            <p>this project was based around using boot straps and building an efficient website that didint require an external style sheet, this is not a personal strong suite but is a quick way to build an adaquet website.</p>
-            <a href="C:\Users\vance\OneDrive\pawfectpetcare\index.html">Pawfect Pet Care</a>
-            <img src="C:\Users\vance\OneDrive\Desktop\WebDesignFFF\bootinwater.jpg" alt="boot creating mud in water">
-            <p>This project allowed me the opportunity to work with flex boxes and a mobil first web design platform wich is fantastic considering the nature of modern day technology.</p>
-             <a href="C:\Users\vance\OneDrive\Desktop\WebDesignFFF\index.html">Fit for Fitness</a>
-        </section>
+        <!-- Bootstrap Table -->
+        <h2 class="mt-4">Upcoming Classes</h2>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Class</th>
+                    <th>Instructor</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Mon</td><td>9:00 AM</td><td>Yoga</td><td>Jane</td><td>Studio A</td></tr>
+                <tr><td>Tue</td><td>10:00 AM</td><td>Spin</td><td>Bob</td><td>Studio B</td></tr>
+                <tr><td>Wed</td><td>5:00 PM</td><td>Pilates</td><td>Alice</td><td>Studio C</td></tr>
+                <tr><td>Thu</td><td>6:00 PM</td><td>Zumba</td><td>Sam</td><td>Studio A</td></tr>
+                <tr><td>Fri</td><td>7:00 AM</td><td>Strength</td><td>Mike</td><td>Studio B</td></tr>
+            </tbody>
+        </table>
 
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Vance Clark. All rights reserved.</p>
-    </footer>
+        <!-- Centered Card -->
+        <div class="card my-5 mx-auto" style="width: 22rem;">
+            <div class="card-body text-center">
+                <img src="bootinwater.jpg" class="card-img-custom" alt="black and white boot in water with mud swirling around it">
+                <h5 class="card-title mt-3">Join the community!</h5>
+                <p class="card-text">A fun and challenging workout to keep you motivated and fit.</p>
+                <a href="contactus.html" class="btn btn-success">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,49 @@
+body {
+    color: darkolivegreen;
+    background-color: blanchedalmond;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Flexbox Navigation */
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: darkolivegreen;
+    color: black;
+}
+
+/* Mobile-first: vertical stacked links */
+.nav-container a {
+    text-decoration: none;
+    color: blanchedalmond;
+    padding: 0.5rem 1rem;
+    border: 1px solid blanchedalmond;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Custom image style */
+.card-img-custom {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Wider screens: horizontal row navigation */
+@media (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .nav-container a {
+        width: auto;
+    }
+}

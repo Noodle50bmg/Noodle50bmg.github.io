@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Pet Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pawfect Pet Care</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section id="gallery" class="mb-5">
+        <div id="petCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#petCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="petpic.jpg" class="d-block w-100" alt="mini australian shepard looking off into the distance infront of house">
+                    <div class="carousel-caption bg-dark bg-opacity-50 rounded">Our best friends</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="petpic-3.jpg" class="d-block w-100" alt="dog with owner in tall grass">
+                    <div class="carousel-caption bg-dark bg-opacity-50 rounded">We don't deserve them</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="petpic-2.jpg" class="d-block w-100" alt="bird looking out of the hole of a bird house">
+                    <div class="carousel-caption bg-dark bg-opacity-50 rounded">They deserve the best</div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#petCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#petCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Cards -->
+    <section id="services" class="container mb-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="petpic-4.jpg" class="card-img-top" alt="fish picture with people">
+                    <div class="card-body">
+                        <h5 class="card-title">Dog Daycare</h5>
+                        <p class="card-text">Safe and supervised play for your furry and scalley friends all day long and in the perfect light.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="petpic-5.jpg" class="card-img-top" alt="fish in hand">
+                    <div class="card-body">
+                        <h5 class="card-title">Grooming</h5>
+                        <p class="card-text">Professional grooming to keep your pets clean and healthy along with making sure they get held enough.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="petpic-6.jpg" class="card-img-top" alt="man holding fish">
+                    <div class="card-body">
+                        <h5 class="card-title">Boarding</h5>
+                        <p class="card-text">Comfortable overnight stays for your pets while you are away even your fish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq" class="container mb-5">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne">
+                        What should I bring for overnight stays?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Please bring your pet's food worms, bugs, ect... their favorite toys or lures, and any medications they need.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo">
+                        Can I tour the facility?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Absolutely! We encourage tours to help you feel comfortable leaving your pets with us.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree">
+                        What vaccinations are required?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Dogs need rabies, distemper, and Bordetella. Cats require rabies and FVRCP, fish require no vacination but will need a thourough chech.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

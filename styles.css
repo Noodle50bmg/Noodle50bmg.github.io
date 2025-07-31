@@ -28,7 +28,7 @@ header .tagline {
 
 /* ===== Navigation ===== */
 nav {
-    background:darkolivegreen;
+    background: darkolivegreen;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background:darkolivegreen;
+    background: #556b2f;
 }
 
 /* ===== Sections ===== */
@@ -61,23 +61,45 @@ section {
 
 h2 {
     margin-bottom: 1rem;
-    color:darkolivegreen;
-    
+    color: darkolivegreen;
 }
 
-img {
-    float:left;
-    max-width: 100%;
+/* ===== About Me Image ===== */
+.float-left {
+    float: left;
+    max-width: 250px;
+    margin: 0 1rem 1rem 0;
+    border-radius: 8px;
+}
+
+/* ===== Portfolio Section ===== */
+#previous-work {
+    text-align: center; /* Center text and buttons */
+}
+
+#previous-work img {
+    float: none;
     display: block;
+    max-width: 80%;
     margin: 1rem auto;
     border-radius: 8px;
 }
 
-/* ===== Portfolio Grid ===== */
-.project-gallery {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
+/* Project Buttons */
+.project-button {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.6rem 1.2rem;
+    background: darkolivegreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.project-button:hover {
+    background: #556b2f;
 }
 
 /* ===== Contact Form ===== */
@@ -107,35 +129,20 @@ button {
 }
 
 button:hover {
-    background: darkolivegreen;
+    background: #556b2f;
 }
 
 /* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 1rem;
-    background:darkolivegreen;
+    background: darkolivegreen;
     color: white;
     margin-top: 2rem;
 }
 
 /* ===== Responsive Breakpoints ===== */
 @media (min-width: 600px) {
-    .project-gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 900px) {
-    nav ul {
-        justify-content: flex-end;
-        padding-right: 2rem;
-    }
-
-    .project-gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     body {
         font-size: 1.05rem;
     }
