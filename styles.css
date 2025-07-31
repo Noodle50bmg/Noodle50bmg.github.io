@@ -1,0 +1,142 @@
+/* ===== Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #222;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: darkolivegreen;
+    color: white;
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background:darkolivegreen;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background:darkolivegreen;
+}
+
+/* ===== Sections ===== */
+main {
+    padding: 1.5rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color:darkolivegreen;
+    
+}
+
+img {
+    float:left;
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+/* ===== Portfolio Grid ===== */
+.project-gallery {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+/* ===== Contact Form ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: darkolivegreen;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: darkolivegreen;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background:darkolivegreen;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* ===== Responsive Breakpoints ===== */
+@media (min-width: 600px) {
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+
+    .project-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    body {
+        font-size: 1.05rem;
+    }
+}
